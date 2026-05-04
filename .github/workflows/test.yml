@@ -29,8 +29,10 @@ jobs:
         run: python3 -c "from app.model import train_and_save; train_and_save()"
  
       - name: Run tests
-        working-directory: phase2-docker-api
-        run: pytest tests/ -v --tb=short
+        run:
+          cd phase2-docker-api
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
+          pytest tests/ -v --tb=short
  
       - name: Check test coverage
         working-directory: phase2-docker-api
