@@ -9,7 +9,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
 import json
  
-mlflow.set_tracking_uri('http://127.0.0.1:5001')  # Store experiments locally
+mlflow.set_tracking_uri('file:./mlruns')  # Store experiments locally
 mlflow.set_experiment('iris-classification')
  
 def train_model(model, model_name, params):
