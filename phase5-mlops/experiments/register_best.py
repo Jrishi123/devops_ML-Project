@@ -2,7 +2,7 @@
 import mlflow
 from mlflow.tracking import MlflowClient
  
-mlflow.set_tracking_uri('http://localhost:5000')
+mlflow.set_tracking_uri('file:./mlruns')
 client = MlflowClient()
  
 def find_best_model():
