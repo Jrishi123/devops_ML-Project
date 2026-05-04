@@ -1,41 +1,45 @@
 name: Test ML API
- 
+
 on:
   push:
     branches: [main, develop]
+
   pull_request:
     branches: [main]
- 
+
 jobs:
   test:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
- 
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-          cache: 'pip'
- 
+          python-version: "3.11"
+          cache: "pip"
+
       - name: Install dependencies
         working-directory: phase2-docker-api
-        run: pip install -r requirements.txt
- 
+        run: |
+          pip install -r requirements.txt
+
       - name: Train model (required for tests)
         working-directory: phase2-docker-api
-        run: python3 -c "from app.model import train_and_save; train_and_save()"
- 
+        run: |
+          python3 -c "from app.model import train_and_save; train_and_save()"
+
       - name: Run tests
-        run:
+        run: |
           cd phase2-docker-api
           export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest tests/ -v --tb=short
- 
+
       - name: Check test coverage
         working-directory: phase2-docker-api
         run: |
           pip install pytest-cov
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest tests/ --cov=app --cov-report=term-missing
