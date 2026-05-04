@@ -128,63 +128,78 @@ Machine Learning is widely used in:
 
 ## ✅ Loads the Iris Dataset
 
+```python id="r4r55g"
 from sklearn.datasets import load_iris
-
+```
 
 The Iris dataset contains flower measurements and species labels.
 
 The dataset contains:
 
-   150 flower samples
-   4 flower measurements (features)
-   3 flower species:
-      Setosa
-      Versicolor
-      Virginica
+* 150 flower samples
+* 4 flower measurements (features)
+* 3 flower species:
+
+  * Setosa
+  * Versicolor
+  * Virginica
 
 This dataset is commonly used for beginner Machine Learning projects and classification tasks.
----
-## ✅ Random Forest Classifier
 
+---
+
+# 🌲 Random Forest Classifier
+
+```python id="jlwm13"
 from sklearn.ensemble import RandomForestClassifier
+```
 
 This is the Machine Learning algorithm used in the project.
 
-What Random Forest Does
-Creates multiple decision trees
-Combines the results from all trees
-Improves prediction accuracy
+## ✅ What Random Forest Does
+
+* Creates multiple decision trees
+* Combines the results from all trees
+* Improves prediction accuracy
 
 The final prediction is selected using majority voting from all decision trees.
 
-Common Uses
+---
+
+## ✅ Common Uses
 
 Random Forest is commonly used for:
 
-classification
-prediction
-data analysis
+* classification
+* prediction
+* data analysis
 
 It is widely used because it provides accurate and reliable predictions.
 
+---
 
-## ✅ train_test_split
+# 📊 train_test_split
 
+```python id="yphvxu"
 from sklearn.model_selection import train_test_split
+```
 
 This function splits the dataset into:
 
-training data
+* training data
+* testing data
 
-testing data
+---
 
-Why Data Splitting is Important
+# ✅ Why Data Splitting is Important
 
-✅ Training Data
+## ✅ Training Data
 
 Used to teach the Machine Learning model.
 
-✅ Testing Data
+---
+
+## ✅ Testing Data
 
 Used to evaluate how well the model performs on unseen data.
 
@@ -192,22 +207,28 @@ This helps measure real-world prediction capability and avoids overfitting.
 
 ---
 
-## ✅ accuracy_score
+# 🎯 accuracy_score
 
+```python id="4f1n0r"
 from sklearn.metrics import accuracy_score
+```
 
 This function calculates how accurate the model predictions are.
 
 It compares:
 
-actual values
-predicted values
+* actual values
+* predicted values
 
 and calculates the prediction accuracy percentage.
 
-Example:
+---
 
+## ✅ Example
+
+```text id="3dn5dv"
 Accuracy: 96.67%
+```
 
 This means the model predicted correctly for about 97 out of 100 samples.
 
