@@ -4,3 +4,5 @@ scikit-learn==1.7.0
 numpy
 scipy
 pandas
+pytest==7.4.0
+httpx==0.25.0 
