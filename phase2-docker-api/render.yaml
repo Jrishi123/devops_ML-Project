@@ -1,0 +1,13 @@
+# render.yaml — Infrastructure as Code for Render
+services:
+  - type: web
+    name: iris-ml-api
+    env: docker
+    dockerfilePath: ./phase2-docker-api/Dockerfile
+    dockerContext: ./phase2-docker-api
+    branch: main
+    autoDeploy: true   # Deploy automatically on every push!
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_ENV
+        value: production
