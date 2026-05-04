@@ -1,0 +1,32 @@
+name: MLOps - Retrain on Data Change
+ 
+on:
+  push:
+    paths:
+      - 'data/**'          # Trigger when data files change
+      - 'phase5-mlops/**'  # Or when ML code changes
+  schedule:
+    - cron: '0 0 * * 0'   # Also run weekly (Sunday midnight)
+ 
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+ 
+      - name: Install MLflow + sklearn
+        run: pip install mlflow scikit-learn
+ 
+      - name: Run all experiments
+        run: python3 phase5-mlops/experiments/train.py
+ 
+      - name: Register best model
+        run: python3 phase5-mlops/experiments/register_best.py
+ 
+      - name: Trigger API redeploy
+        run: echo 'Best model registered - trigger Render deploy here'

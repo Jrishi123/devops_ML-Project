@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rishi/devops-ml-project/phase5-mlops/experiments/../mlruns/206028585110521052/aff34509896f439b9a832c8b11f3ccf6/artifacts
+end_time: 1777919289169
+entry_point_name: ''
+experiment_id: '206028585110521052'
+lifecycle_stage: active
+run_id: aff34509896f439b9a832c8b11f3ccf6
+run_name: gradient-boosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777919285212
+status: 3
+tags: []
+user_id: rishi

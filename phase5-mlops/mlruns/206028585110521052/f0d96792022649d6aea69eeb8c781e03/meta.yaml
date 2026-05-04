@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/rishi/devops-ml-project/phase5-mlops/experiments/../mlruns/206028585110521052/f0d96792022649d6aea69eeb8c781e03/artifacts
+end_time: 1777919285208
+entry_point_name: ''
+experiment_id: '206028585110521052'
+lifecycle_stage: active
+run_id: f0d96792022649d6aea69eeb8c781e03
+run_name: random-forest-200
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777919280988
+status: 3
+tags: []
+user_id: rishi

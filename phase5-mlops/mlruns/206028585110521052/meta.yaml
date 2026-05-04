@@ -1,0 +1,8 @@
+artifact_location: file:///Users/rishi/devops-ml-project/phase5-mlops/experiments/../mlruns/206028585110521052
+creation_time: 1777919276347
+experiment_id: '206028585110521052'
+last_update_time: 1777919276347
+lifecycle_stage: active
+name: iris-classification
+trace_location: null
+workspace: default

@@ -1,0 +1,23 @@
+artifact_path: /Users/rishi/devops-ml-project/phase5-mlops/experiments/artifacts/1/models/m-35ebb72e05144f86832993d5e2c9d66c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-35ebb72e05144f86832993d5e2c9d66c
+model_size_bytes: 347952
+model_uuid: m-35ebb72e05144f86832993d5e2c9d66c
+prompts: null
+run_id: 291ffd9a12da4cd0a9120afe8441723b
+utc_time_created: '2026-05-04 18:38:05.930607'

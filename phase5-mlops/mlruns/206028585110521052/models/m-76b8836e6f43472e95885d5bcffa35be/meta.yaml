@@ -1,0 +1,10 @@
+artifact_location: file:///Users/rishi/devops-ml-project/phase5-mlops/experiments/../mlruns/206028585110521052/models/m-76b8836e6f43472e95885d5bcffa35be/artifacts
+creation_timestamp: 1777919285965
+experiment_id: '206028585110521052'
+last_updated_timestamp: 1777919289166
+model_id: m-76b8836e6f43472e95885d5bcffa35be
+model_type: null
+name: model
+source_run_id: aff34509896f439b9a832c8b11f3ccf6
+status: 2
+status_message: null
